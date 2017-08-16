@@ -31,9 +31,6 @@
                 <%= link_to 'My Dashboard', dashboard_path, class: 'nav-link' %>
               </li>
               <li class="nav-item">
-                <%= link_to 'My Profile', user_path(current_user), class: 'nav-link' %>
-              </li>
-              <li class="nav-item">
                 <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
               </li>
             <% else %>
@@ -70,9 +67,9 @@
           <div class="col-12 col-sm-3">
             <b>About</b>
             <br />
-            <%= link_to 'Team', '#' %>
+            <%= link_to 'Team', team_path %>
             <br />
-            <%= link_to 'Careers', '#' %>
+            <%= link_to 'Careers', careers_path %>
             <br />
             <%= link_to 'Privacy Policy', privacy_path %>
           </div>
